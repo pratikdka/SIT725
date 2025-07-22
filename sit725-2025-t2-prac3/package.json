@@ -1,0 +1,29 @@
+{
+  "name": "sit725-2025-t2-prac3",
+  "version": "1.0.0",
+  "description": "sit 725 week 3 prac",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Materialize",
+    "HTML",
+    "JS",
+    "CSS"
+  ],
+  "author": "Pratik Khadka",
+  "license": "MIT",
+  "bugs": {
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
