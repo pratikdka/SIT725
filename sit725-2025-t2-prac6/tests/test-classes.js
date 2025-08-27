@@ -47,7 +47,7 @@ describe("GET /api/projects", () => {
     const res = await request(testApp).get("/api/projects").expect(200);
     expect(Array.isArray(res.body.data)).toBe(true);
     expect(res.body.data.length).toBeGreaterThanOrEqual(2);
-    expect(res.body).toMatchObject({ statusCode: 200, message: "Failure" });
+    expect(res.body).toMatchObject({ statusCode: 200, message: "Success" });
   });
 
 // Test #2
