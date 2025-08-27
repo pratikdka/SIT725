@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning Units</title>
+
+  <!-- Materialize CSS & Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="../public/css/style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper navbar-size">
+      <a href="#" class="brand-logo">
+        <img class="user-image-size" src="../public/images/logo.jpg" />
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a target="_blank" href="https://www.linkedin.com/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-body">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h1 id="heading">Welcome to SIT 725 – MVC</h1>
+          <p class="flow-text">
+            This demo uses MVC with Express, Mongoose, and EJS. Cards below are loaded from MongoDB via an API.
+          </p>
+        </div>
+
+        <div class="col s12 center-align">
+          <img class="materialboxed materialboxed-image" src="../public/images/all.jpg" />
+        </div>
+
+        <div class="col s12 center-align">
+          <a class="waves-effect waves-light btn click-me-button modal-trigger" data-target="modal1">
+            <i class="material-icons left">auto_fix_high</i>Click Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Cards injected here -->
+      <div class="row" id="card-section"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="row modal-content">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row center-align">
+            <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/socket-client.js"></script>
+</body>
+</html>
